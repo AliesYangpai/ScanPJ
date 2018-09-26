@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.scanpj.work.ui.activity.ScanOperateActivity">
+
+
+    <!--标题-->
+    <include
+        android:id="@+id/include_title_scan_operate"
+        layout="@layout/title_bar_aty_center_right_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_scan_operate"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+
+
+        <RadioGroup
+            android:id="@+id/rg_scan_type"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_scan_single"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/scan_single"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textColor="@drawable/selector_text_blue_white"
+                android:background="@drawable/selector_bg_blue_white_left"
+                />
+
+
+            <RadioButton
+                android:id="@+id/rb_scan_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/scan_continue"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textColor="@drawable/selector_text_blue_white"
+                android:background="@drawable/selector_bg_blue_white_right"
+                />
+
+        </RadioGroup>
+
+
+
+
+        <CheckBox
+            android:id="@+id/cb_scan_operate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/selector_blue_bg"
+            android:textColor="@color/white"
+            android:text="@string/start"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:layout_marginLeft="5dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <include
+        android:id="@+id/include_scan_operate_bottom"
+        layout="@layout/include_scan_operate_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_scan_type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_top"
+        app:tabSelectedTextColor="@color/the_green_normal"
+        app:tabIndicatorColor="@color/the_green_normal"
+        android:background="@drawable/img_bg_work_bar"
+
+
+        />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tl_scan_type"
+        android:layout_above="@id/include_scan_operate_bottom"
+        />
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--tools:context="com.scanpj.work.ui.activity.ScanOperateActivity">-->
+
+
+    <!--&lt;!&ndash;标题&ndash;&gt;-->
+    <!--<include-->
+        <!--android:id="@+id/include_title_scan_operate"-->
+        <!--layout="@layout/title_bar_aty_center_left"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/include_title_scan_operate"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--&gt;-->
+
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/rg_scan_type"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:background="@color/white"-->
+            <!--android:layout_weight="1"-->
+            <!--&gt;-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_scan_single"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/scan_single"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="@drawable/selector_text_blue_gray"-->
+
+                <!--/>-->
+
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_scan_continue"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/scan_continue"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="@drawable/selector_text_blue_gray"-->
+                <!--/>-->
+
+        <!--</RadioGroup>-->
+
+
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/cb_scan_operate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:button="@null"-->
+            <!--android:background="@drawable/selector_blue_bg"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="@string/start"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="19sp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+    <!--<include-->
+        <!--android:id="@+id/include_scan_operate_bottom"-->
+        <!--layout="@layout/include_scan_operate_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--/>-->
+
+
+
+
+
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tl_scan_type"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_below="@id/ll_top"-->
+        <!--app:tabSelectedTextColor="@color/qhy_blue"-->
+        <!--app:tabIndicatorColor="@color/qhy_blue"-->
+        <!--android:background="@drawable/img_bg_work_bar"-->
+        <!--/>-->
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragment_container_scan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/tl_scan_type"-->
+        <!--android:layout_above="@id/include_scan_operate_bottom"-->
+        <!--/>-->
+
+
+
+
+
+<!--</RelativeLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

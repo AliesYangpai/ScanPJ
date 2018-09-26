@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.scanpj.work.ui.activity.ConfigActivity">
+
+
+    <!--标题-->
+    <include
+        android:id="@+id/include_config_title"
+        layout="@layout/title_bar_aty_center_all_right_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_config_title"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_chicken_house_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_config_title"
+                android:textColor="@color/the_green_normal"
+                android:textStyle="bold"
+                android:textSize="@dimen/TEXT_DIMEN_40PX" />
+
+
+            <TextView
+                android:id="@+id/tv_chicken_house_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_config_title"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/TEXT_DIMEN_32PX" />
+
+
+
+            <EditText
+                android:id="@+id/et_feet_step"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boder_bg_white_in_gray_stroke_radius_2"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_compare_step"
+                android:inputType="number"
+                android:lineSpacingExtra="3dp"
+                android:maxLength="11"
+                android:paddingLeft="3dp"
+                android:textColor="@color/black_text"
+                android:textColorHint="@color/gray6"
+                android:textSize="@dimen/TEXT_DIMEN_30PX"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray6"
+                android:textSize="@dimen/TEXT_DIMEN_30PX"
+                android:text="@string/select_batch"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            <TextView
+                android:id="@+id/tv_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_blue_bg"
+                android:gravity="center"
+                android:text="@string/load_in"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
+

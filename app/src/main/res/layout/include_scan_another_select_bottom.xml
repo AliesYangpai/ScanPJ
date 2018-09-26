@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_select_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+
+
+
+
+        <CheckBox
+            android:id="@+id/cb_check_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="全选"
+            android:textColor="@color/the_green_normal"
+            android:drawableLeft="@drawable/selector_blue_check_mark_bg"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:id="@+id/tv_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TEXT_DIMEN_30PX"
+            android:layout_weight="1"
+            android:background="@drawable/selector_red_bg"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

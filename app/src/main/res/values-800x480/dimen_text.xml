@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TEXT_DIMEN_18PX">9sp</dimen>
+    <dimen name="TEXT_DIMEN_30PX">15sp</dimen>
+    <dimen name="TEXT_DIMEN_32PX">16sp</dimen>
+    <dimen name="TEXT_DIMEN_34PX">17sp</dimen>
+    <dimen name="TEXT_DIMEN_24PX">12sp</dimen>
+    <dimen name="TEXT_DIMEN_40PX">20sp</dimen>
+    <dimen name="TEXT_DIMEN_48PX">24sp</dimen>
+    <dimen name="TEXT_DIMEN_72PX">36sp</dimen>
+
+
+
+</resources>

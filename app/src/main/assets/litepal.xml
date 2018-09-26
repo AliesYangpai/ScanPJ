@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="ScanPJ.db"></dbname>  <!--数据库名称-->
+
+    <version value="1"></version>  <!--数据库版本号-->
+
+    <list>
+        <mapping class="com.scanpj.work.entity.ChickenInfoRaw"></mapping>
+        <mapping class="com.scanpj.work.entity.ChickenInfoScanAbout"></mapping>
+    </list>
+</litepal>

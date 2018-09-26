@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">SF1700扫码助手</string>
+
+
+    <string name="permission_title">权限提醒</string>
+    <string name="permission_msg">您拒绝了我们必要的一些权限，将会导致应用某些功能无法使用，请在设置中授权！</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_sure">前往设置</string>
+
+
+    <string name="wifi_connect">已连入wifi</string>
+    <string name="mobel_connect">已连入4G</string>
+    <string name="no_net_connect">网络连接断开</string>
+
+
+    <string name="historys">历史记录</string>
+
+    <string name="scan_single">单次扫描</string>
+    <string name="scan_continue">连续扫描</string>
+
+    <string name="scan_center">扫描中心</string>
+
+
+    <string name="current_scan">当前</string>
+    <string name="all_data">全部</string>
+    <string name="has_scan">已扫</string>
+    <string name="not_scan">未扫</string>
+
+
+    <string name="load_in">导入</string>
+
+    <string name="load_in_chicken_house">导入鸡场</string>
+    <string name="scan">扫描</string>
+
+    <string name="sync">同步</string>
+
+    <string name="feet_ring_id">脚环ID</string>
+    <string name="code">code</string>
+
+
+
+
+
+
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="commite">提交</string>
+
+    <string name="insert_time">插入时间</string>
+
+    <string name="has_been_scan">已扫描的数据</string>
+
+
+    <string name="please_enter_feet_ring_id">请录入脚环ID</string>
+    <string name="please_enter_code">请录入code</string>
+    <string name="commit_success">提交成功</string>
+
+
+    <string name="chicken_house_list">鸡场列表</string>
+
+
+    <string name="chicken_house_detial">鸡场详情</string>
+
+
+    <string name="hint_compare_step">输入对比步数</string>
+
+    <string name="select_all">全选</string>
+    <string name="select_cancel">取消</string>
+
+    <string name="setting">设置</string>
+
+    <string name="remotedb_connect_fail">数据库连接失败</string>
+
+    <string name="enter_compare_step">请输入对比步数</string>
+    <string name="compare_step_not_0">对比步数不能为0</string>
+    <string name="select_batch">请选择批次</string>
+    <string name="no_select_data">没有查询出数据</string>
+
+    <string name="please_scan">请扫描</string>
+
+    <string name="please_finish_scan">请完成扫描</string>
+
+    <string name="has_scannd">数据已扫描</string>
+
+    <string name="upload_before_no_scan">请先扫描数据</string>
+    <string name="sync_finish">数据已同步完毕</string>
+
+
+    <string name="scan_another">扫描</string>
+    <string name="scan_another_feet_ring">扫描脚环</string>
+
+    <string name="delete">删除</string>
+
+    <string name="reload_alert">重新导入数据后，会清除历史数据，请确认？</string>
+    <string name="batch_name">批次名称:</string>
+
+    <string name="has_scanned_this_ring_id">已扫描该脚环Id</string>
+    <string name="has_scanned_this_code">已扫描该Code</string>
+
+
+    <string name="please_select">请选择</string>
+
+
+    <string name="del_success">删除成功</string>
+
+    <string name="selecting_not_operate">筛选中不可进行扫描操作</string>
+
+    <string name="digest">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
